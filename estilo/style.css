@@ -50,9 +50,18 @@ body{
     height: 40px;
     margin: 10px;
     background: #023373;
-    border: 2px solid #FFFFFF;
+    border: 1px solid #FFFFFF;
     border-radius: 10px;
     color: #ffffff;
     font-weight: 600;
     font-size: 20px;
+    transition: all 0.5s;
+}
+
+.areaDosBtn button:hover{
+    background: #ffffff9a;
+    color: #023373;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    border: 1px solid #ffffff9a;
 }
