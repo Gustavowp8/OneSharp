@@ -14,6 +14,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
 }
 
 .header img{
@@ -40,8 +44,9 @@ body{
     height: 140px;
     right: 0px;
     border-radius: 10px;
-    margin-top: 7px;
+    margin-top: 5%;
     margin-right: 5px;
+    z-index: 1000;
 }
 
 .opcsMenu ul{
@@ -74,3 +79,54 @@ body{
 }
 /*===== Menu =====*/
 
+.capa{
+    max-width: 600px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0);
+    margin: auto;
+    /*margin-top: 80px;*/
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-next{
+      color: #02337300;
+  }
+  .swiper-button-prev{
+    color: #02337300;
+  }
+
+  @media(max-width: 600px){
+    #opcsMenu{
+        margin-top: 16%;
+    }
+  }
