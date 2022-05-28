@@ -125,10 +125,10 @@ form{
 .areaDeButoes{
     width: 96%;
     padding: 10px;
+    padding-bottom: 20px;
     text-align: center;
     margin: auto;
     background: #FFFFFF;
-    
 }
 
 .areaDeButoes button{
