@@ -66,7 +66,7 @@ body{
     border: 1px solid #ffffff9a;
 }
 
-/*======= fomulario =========*/
+/*======= fomulario cadastro =========*/
 .areaLogoform{
     text-align: center;
     margin-top: 10%;
@@ -148,4 +148,21 @@ form{
     background: #ffffff;
     color: #023373;
     border: 1px solid #023373;
+}
+
+/*======= fomulario login =========*/
+
+.entradaDados{
+    background: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.entradaDados h4{
+    margin-top: -3px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #023373;
 }
