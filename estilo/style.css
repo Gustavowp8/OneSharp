@@ -89,6 +89,7 @@ form h4{
     color: #023373;
     font-weight: 600;
     font-size: 24px;
+    margin-bottom: -5px;
 }
 
 form{
@@ -99,21 +100,52 @@ form{
 
 .entradaDados{
     padding: 10px;
-    width: 450px;
+    width: auto;
     margin: auto;
+    /*background: red;*/
 }
 
 .entradaDados p{
     font-weight: 400;
     font-size: 15px;
     color: #000000;
-    margin-bottom: -1px;
-    padding: 2px;
+    margin-bottom: -3px;
+    margin-left: 10px;
+    padding: 4px;
 }
 
 .entradaDados input{
     border: 1px solid #000000;
     border-radius: 10px;
-    width: 100%;
+    width: 98%;
     height: 30px;
+    /*margin: 10px;*/
+}
+
+.areaDeButoes{
+    width: 96%;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    background: #FFFFFF;
+    
+}
+
+.areaDeButoes button{
+    width: 202px;
+    height: 30px;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    background: #023373;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 1px solid #023373;
+    transition: all 0.5s;
+}
+
+.areaDeButoes button:hover{
+    background: #ffffff;
+    color: #023373;
+    border: 1px solid #023373;
 }
