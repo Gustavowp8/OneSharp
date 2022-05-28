@@ -65,3 +65,55 @@ body{
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     border: 1px solid #ffffff9a;
 }
+
+/*======= fomulario =========*/
+.areaLogoform{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.areaLogoform img{
+    width: 140px;
+    height: 135px;
+}
+
+.areaLogoform h1{
+    margin-top: -5px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+form h4{
+    text-align: center;
+    color: #023373;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+form{
+    background: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.entradaDados{
+    padding: 10px;
+    width: 450px;
+    margin: auto;
+}
+
+.entradaDados p{
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: -1px;
+    padding: 2px;
+}
+
+.entradaDados input{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+}
