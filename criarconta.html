@@ -38,12 +38,12 @@
                 <!--================-->
 
                 <p>Criar uma senha</p>
-                <input type="password" name="nSenha" id="nSenha" placeholder="Senha de 4 digitos">
+                <input type="password" maxlength="4" max="4" min="4" name="nSenha" id="nSenha" placeholder="Senha de 4 digitos">
 
                 <!--================-->
 
                 <p>Repita a senha</p>
-                <input type="password" name="dnSenha" id="dnSenha" placeholder="Senha de 4 digitos">
+                <input type="password" maxlength="4" max="4" min=" name="dnSenha" id="dnSenha" placeholder="Senha de 4 digitos">
 
             </div>
 
@@ -51,12 +51,13 @@
 
         <div class="areaDeButoes">
 
-            <button>criar conta</button> <br>
+            <button onclick="criaConta()">criar conta</button> <br>
             <button>usar conta Google</button>
 
         </div>
 
     </main>
 
+    <script src="controle/acesso.js"></script>
 </body>
 </html>
