@@ -37,7 +37,7 @@ body{
 
 #opcsMenu{
     display: none;
-    position: absolute;
+    position: fixed;
     background: #023373;
     padding: 10px;
     width: 140px;
@@ -125,8 +125,111 @@ body{
     color: #02337300;
   }
 
+  .fotoPerfil{
+      background: black;
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .dadosPerfil{
+      display: flex;
+      align-items: center;
+  }
+
+  .espacoNome{
+      border-bottom: 2px solid #023373;
+  }
+
+  #sobreSite{
+        margin-top: -5px;
+        font-weight: 300;
+        font-size: 13px;
+        font-family: 'Open Sans';
+        color: #023373;
+        text-align: center;
+  }
+
+  /*=======================================*/
+
+  .perfilPrest{
+      width: 55px;
+      height: 55px;
+      border-radius: 100%;
+      background: red;
+      margin: auto;
+  }
+  .prestes h3{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Open Sans';
+  }
+  .prestes p{
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'Open Sans';
+  }
+
+  .flex{
+      max-width: 800px;
+      margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .prestes{
+    background: #023373;
+    color: #ffffff;
+    flex: 1 0 150px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  /*===============================================*/
+
+  .menubaixo{
+      /*background: red;*/
+      padding: 5px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+  }
+
+  .menubaixoDois img{
+      width: 30px;
+  }
+
+  .menubaixoDois{
+      position: relative;
+      background: #023373;
+      display: flex;
+      justify-content: space-around;
+      padding: 5px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+  }
+
+
   @media(max-width: 600px){
     #opcsMenu{
         margin-top: 16%;
+    }
+    .menubaixoDois{
+        position: relative;
+        background: #023373;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        max-width: 800px;
+        margin: auto;
+       
+        margin-right: 10px;
     }
   }
