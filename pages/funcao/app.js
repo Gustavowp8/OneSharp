@@ -8,3 +8,7 @@ function mMenu(){
 menu.addEventListener('click', mMenu)
 
 /*==============================*/
+
+function irPerfil(){
+    location='prestador.html'
+}
