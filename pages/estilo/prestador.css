@@ -92,7 +92,7 @@ body{
   right: 0;
   margin: 10px;
   margin-top: 12px;
-  transition: 1.1s;
+  transition: 1s;
 }
 
 #editarperfil:hover{
@@ -583,6 +583,105 @@ body{
     color: #ffffff;
     border: #023373;
   }
+
+  /*=========== aea da edição ========*/
+
+  .editarCapa{
+    position: absolute;
+    background: #023373;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 1000;
+    cursor: pointer;
+
+    right: 0;
+    margin-top: -15px;
+    margin-right: 20px;
+  }
+
+  .editarfotoperfil{
+    position: absolute;
+    background: #023373;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 1000;
+    cursor: pointer;
+
+    right: 0;
+    margin-top: -22px;
+    margin-right: 20px;
+  }
+
+  .areaeditavel{
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .descricaodois{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .descricaodois h3{
+  padding: 2px;
+  border-bottom: 2px solid black;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: -5px;
+  }
+
+  #tDescricao{
+    width: 99%;
+  }
+
+  .descricao button{
+    border: 1px solid black;
+    background: #ffffff;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .descricao button:hover{
+    background: black;
+    color: #ffffff;
+  }
+
+  /*========================*/
+
+.adicinavido{
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+  margin-top: 50px;
+}
+.adicinavido h3{
+  padding: 2px;
+  border-bottom: 2px solid black;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: -5px;
+  text-align: center;
+}
+.adicinavido img{
+  width: 100px;
+}
+
+.adicinavido button{
+  border: 1px solid black;
+  background: #ffffff;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.adicinavido button:hover{
+  background: black;
+  color: #ffffff;
+}
+.carga{
+  text-align: center;
+}
 
 /*========= Conteudo =============*/
 

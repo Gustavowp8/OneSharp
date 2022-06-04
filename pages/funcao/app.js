@@ -55,3 +55,12 @@ function processarMsg(){
     balaomsgusuariodois.style.display='block'
     txtuserRecebe.innerHTML = textoMsg;
 }
+
+/*====== editar perfil ======*/
+
+const editar = document.getElementById('editarperfil')
+editar.addEventListener('click', irParaeditar)
+function irParaeditar(){
+    alert('Você')
+    location='editarperfil.html'
+}
