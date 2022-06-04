@@ -109,6 +109,9 @@ body{
     z-index: 10000;
 }
 
+#select{
+    border-bottom: 4px solid white;
+}
 /*========= conteudo =============*/
 
 .capa{
@@ -432,6 +435,119 @@ body{
       margin: 10px;
   }
 
+  /*====== Mensagens ======*/
+
+  .appmsg{
+      max-width: 800px;
+      margin: auto;
+      padding: 10px;
+      /*background: red;*/
+  }
+
+  .fotoperfil{
+      width: 60px;
+      height: 60px;
+      background: #000000;
+      border-radius: 100%;
+      margin-left: 15px;
+      margin-right: 20px;
+  }
+
+  .areaMsg{
+      background: #023373;
+      color: #ffffff;
+      margin: 20px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+
+  .sobreprestador{
+      margin-top: 14px;
+      /*background: red;*/
+      text-align: center;
+      border-bottom: 1px solid #023373;
+      margin-bottom: 5px;
+  }
+
+  .sobreprestador p{
+      margin-top: -5px;
+  }
+
+  .fotoperfilconver{
+    width: 60px;
+    height: 60px;
+    background: #000000;
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin: auto;
+  }
+
+  #balaomsgusuario{
+    background: #023373;
+    color: #ffffff;
+    max-width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  #balaomsgusuario h5{
+      margin-top: -3px;
+      margin-bottom: -1px;
+  }
+
+  #msgprestador{
+    position: relative;
+    background: #ffffff;
+    color: #023373;
+    max-width: 270px;
+    padding: 5px;
+    border: 2px solid #023373;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 50%;
+  }
+
+  #msgprestador h5{
+    margin-top: -3px;
+    margin-bottom: -1px;
+  }
+
+  .entredamsg{
+      background: #ffffff10;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 50px;
+      padding: 10px;
+      border-top: 1px solid #ffffff;
+      align-items: center;
+  }
+
+  #cMsg{
+    width: 80%;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #023373;
+  }
+
+  #btnEnvia{
+    width: 200px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #023373;
+    color: #ffffff;
+    border: #023373;
+  }
+
 /*========= Conteudo =============*/
 
 @media(max-width: 600px){
@@ -453,6 +569,6 @@ body{
     .confirCompraPacote2{
         width: auto;
         margin: 50px;
-        margin-top: 20%;
+        margin-top: 40%;
     }
   }
