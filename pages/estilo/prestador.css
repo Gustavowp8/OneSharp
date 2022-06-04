@@ -367,6 +367,70 @@ body{
       color: #ffffff;
   }
 
+  .confirCompraPacote{
+      display: none;
+      background: rgba(0, 0, 0, 0.922);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1100;
+  }
+
+  .confirCompraPacote2{
+      background: #ffffff;
+      padding: 10px;
+      max-width: 400px;
+      margin: auto;
+      margin-top: 10%;
+      border-radius: 10px;
+  }
+
+  .confirCompraPacote3 {
+      text-align: center;
+  }
+
+  .confirCompraPacote3 img{
+      width: 50px;
+  }
+
+  #tTituloCompra{
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  #tDescritivo{
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  #confirmarCompra{
+    width: 220px;
+    height: 32px;
+    margin: 10px;
+    background: #023373;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #023373;
+  }
+
+  #confirmarCompra:hover{
+      box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.426);
+  }
+
+  #cancelarCompra{
+      background: #ffffff;
+      border: 2px solid red;
+      padding-left: 60px;
+      padding-right: 60px;
+      border-radius: 10px;
+      color: red;
+      margin: 10px;
+  }
+
 /*========= Conteudo =============*/
 
 @media(max-width: 600px){
@@ -383,5 +447,10 @@ body{
         margin: auto;
        
         margin-right: 10px;
+    }
+
+    .confirCompraPacote2{
+        width: auto;
+        margin: 50px;
     }
   }
