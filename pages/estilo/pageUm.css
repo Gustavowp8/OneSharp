@@ -203,6 +203,8 @@ body{
 
   .menubaixoDois img{
       width: 30px;
+      height: 30px;
+      padding: 3px;
   }
 
   .menubaixoDois{
@@ -212,8 +214,14 @@ body{
       justify-content: space-around;
       padding: 5px;
       max-width: 800px;
+      height: 40px;
+      align-items: center;
       margin: auto;
       border-radius: 10px;
+  }
+
+  #select{
+      border-bottom: 4px solid white;
   }
 
 
