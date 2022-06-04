@@ -30,6 +30,52 @@
 
     <!--===================-->
 
+    <main id="main" class="main">
+
+        <h3 id="tTituloCart">Carteira</h3>
+
+        <div class="graficopag">
+
+            <canvas id="myChart"></canvas>
+
+        </div>
+
+        <h3 id="saldo">Você tem R$ 100,00</h3>
+
+        <div class="areabtncart">
+
+            <button>adicionar saldo</button>
+            <button>retirar saldo</button>
+
+        </div>
+
+        <h3 id="tTitulomovi">Movimentações</h3>
+
+        <div class="areamovimentacao">
+
+            <div id="movi">
+                <div id="recebe"></div>
+                <p>Pagamento recebido R$ 050,00</p>
+            </div>
+
+            <div id="movi">
+                <div id="recebe"></div>
+                <p>Pagamento recebido R$ 050,00</p>
+            </div>
+
+            <div id="movi">
+                <div id="sacado"></div>
+                <p>Pagamento sacado R$ 050,00</p>
+            </div>
+
+            <div id="movi">
+                <div id="compra"></div>
+                <p>Compra realizada R$ 050,00</p>
+            </div>
+
+        </div>
+
+    </main>
 
     <!--====== Menu baixo =======-->
     <br> <br><br>
@@ -43,6 +89,8 @@
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="funcao/grafico.js"></script>
     <script src="funcao/app.js"></script>
 </body>
 </html>

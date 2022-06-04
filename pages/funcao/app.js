@@ -18,7 +18,7 @@ function irInicio(){
 }
 
 function irPagamentos(){
-    location='pagamentos.html'
+    location='carteira.html'
 }
 
 function irMsg(){
@@ -61,6 +61,5 @@ function processarMsg(){
 const editar = document.getElementById('editarperfil')
 editar.addEventListener('click', irParaeditar)
 function irParaeditar(){
-    alert('Você')
     location='editarperfil.html'
 }

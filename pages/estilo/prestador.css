@@ -683,6 +683,110 @@ body{
   text-align: center;
 }
 
+/*====== Carteira ======*/
+
+.main{
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+}
+
+#tTituloCart{
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+}
+
+.graficopag{
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+  padding: 15px;
+  /*background: rgba(255, 255, 0, 0.88);*/
+}
+
+#saldo{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 25px;
+  background: #023373;
+  max-width: 490px;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.areabtncart{
+  margin: auto;
+  margin-top: 10px;
+  max-width: 490px;
+  display: flex;
+  justify-content: space-between;
+  /*background: red;*/
+}
+
+.areabtncart button{
+  width: 160px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  border: 2px solid #023373;
+  border-radius: 10px;
+  color: #023373;
+  background: #ffffff;
+}
+
+.areabtncart button:hover{
+  background: #023373;
+  color: #ffffff;
+}
+
+#tTitulomovi{
+  margin-top: 50px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #023373;
+}
+
+#movi{
+  border: 2px solid #023373;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+#recebe{
+  width: 30px;
+  height: 30px;
+  background: #023373;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+#sacado{
+  width: 30px;
+  height: 30px;
+  background: #D23939;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+#compra{
+  width: 30px;
+  height: 30px;
+  background: #05f2f2;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 /*========= Conteudo =============*/
 
 @media(max-width: 600px){
