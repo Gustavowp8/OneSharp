@@ -53,13 +53,22 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum similique ab repudiandae aspernatur, voluptatum dicta magnam optio eveniet corrupti molestiae rerum saepe recusandae placeat suscipit quia dolor consequatur temporibus ducimus!
                </p>
            </div>
+
+           <div id="balaomsgusuariodois">
+
+            <h5>Você</h5>
+            <p id="txtuserRecebe">
+           
+            </p>
+
+           </div>
            </div> <br> <br> <br>  <br> <br> <br>
 
            <div class="entredamsg">
 
             <textarea name="cMsg" id="cMsg" cols="20" rows="1" wrap="hard" placeholder="escreva sua mensagem" ></textarea> <br>
 
-            <button id="btnEnvia">enviar</button>
+            <button id="btnEnvia" onclick="processarMsg()">enviar</button>
 
            </div>
 
@@ -67,10 +76,10 @@
     <br> <br><br>
     <div class="menubaixo">
         <div class="menubaixoDois">
-            <img src="../arquivos/icones/home.png">
-            <img src="../arquivos/icones/card.png">
-            <img id="select" src="../arquivos/icones/comments.png">
-            <img src="../arquivos/icones/user.png">
+            <img onclick="irInicio()" src="../arquivos/icones/home.png">
+            <img onclick="irPagamentos()" src="../arquivos/icones/card.png">
+            <img onclick="irMsg()" src="../arquivos/icones/comments.png">
+            <img onclick="irUser()" src="../arquivos/icones/user.png">
         </div>
     </div>
 

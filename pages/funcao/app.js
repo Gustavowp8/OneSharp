@@ -46,3 +46,12 @@ comprar.addEventListener('click', realizarcompra)
 function realizarcompra(){
     alert('Indisponivel no momento')
 }
+
+
+/*====== função da mensagens ======*/
+
+function processarMsg(){
+    const textoMsg = document.getElementById('cMsg').value
+    balaomsgusuariodois.style.display='block'
+    txtuserRecebe.innerHTML = textoMsg;
+}
