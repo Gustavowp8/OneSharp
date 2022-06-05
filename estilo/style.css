@@ -175,6 +175,10 @@ form{
     border-radius: 10px;
 }
 
+#avisoteste{
+    color: #ffffff;
+    text-align: center;
+}
 /*======= fomulario login =========*/
 
 .entradaDados{
