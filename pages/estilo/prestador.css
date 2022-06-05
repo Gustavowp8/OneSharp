@@ -787,6 +787,107 @@ body{
   margin-right: 20px;
 }
 
+/*====== area de popup ======*/
+
+.enviafotoeno{
+  display: none;
+  background: rgba(0, 0, 0, 0.869);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 25000;
+}
+
+.enviafotoenomedois{
+  max-width: 400px;
+    margin: auto;
+    margin-top: 9%;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fecha{
+  width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 10px;
+}
+
+.container {
+ color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.container a, button {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px 20px;
+  border: 3px solid #023373;
+  border-radius: 10px;
+  background: transparent;
+  margin-top: 10px;
+  color: #023373;
+}
+
+label {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.input-file-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  width: 200px;
+  border: 2px dashed #023373; /*!important;*/
+  font-size: 15px;
+  font-weight: 700;
+  color: #023373;
+  text-align: center;
+  padding: 9px 20px;
+
+}
+
+.upload-btn input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.upload_img {
+  display: inline-block;
+  border: 3px solid #023373;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  vertical-align: middle;
+  margin: auto;
+  margin-top: 10px;
+}
+
 /*========= Conteudo =============*/
 
 @media(max-width: 600px){
@@ -809,5 +910,11 @@ body{
         width: auto;
         margin: 50px;
         margin-top: 40%;
+    }
+
+    .enviafotoenomedois{
+      width: auto;
+      margin: 20px;
+      margin-top: 30%;
     }
   }
