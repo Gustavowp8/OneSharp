@@ -27,10 +27,10 @@
 
     </main> 
 
-    <div class="novaconta" id="novaconta" onclick="fechacadastro()">
+    <div class="novaconta" id="novaconta">
         <div class="novacontadois">
             <div class="novacontatres">
-                <div class="fecha"></div>
+                <div class="fecha" onclick="fechacadastro()"></div>
                     <div class="entradaDados">
 
                     <form>
@@ -88,6 +88,7 @@
         document.getElementById('singnup').addEventListener('click' , function(){
             const email = document.getElementById("email").value
             const password = document.getElementById("pass").value
+            const senha = document.getElementById('dnSenha').value
         
             createUserWithEmailAndPassword(auth, email, password)
               .then((userCredential) => {
