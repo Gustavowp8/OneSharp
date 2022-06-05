@@ -94,13 +94,11 @@ form h4{
 
 form{
     background: #ffffff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .entradaDados{
     padding: 10px;
-    width: auto;
+    
     margin: auto;
     /*background: red;*/
 }
@@ -125,7 +123,6 @@ form{
 .areaDeButoes{
     width: 96%;
     padding: 10px;
-    padding-bottom: 20px;
     text-align: center;
     margin: auto;
     background: #FFFFFF;
@@ -150,19 +147,53 @@ form{
     border: 1px solid #023373;
 }
 
+/*====== popup de cadastro ======*/
+
+.novaconta{
+    display: none;
+    background: rgba(0, 0, 0, 0.869);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.novacontatres{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10%;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fecha{
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 10px;
+}
+
 /*======= fomulario login =========*/
 
 .entradaDados{
     background: #ffffff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-bottom: 60px;
+    border-radius: 10px;
 }
 
 .entradaDados h4{
     margin-top: -3px;
     text-align: center;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     color: #023373;
+}
+
+@media(max-width: 600px){
+    .novacontatres{
+        width: auto;
+        margin: 35px;
+        margin-top: 35%;
+    }
 }

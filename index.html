@@ -25,8 +25,87 @@
            </div>
        </div>
 
-    </main>
+    </main> 
+
+    <div class="novaconta" id="novaconta" onclick="fechacadastro()">
+        <div class="novacontadois">
+            <div class="novacontatres">
+                <div class="fecha"></div>
+                    <div class="entradaDados">
+
+                    <form>
+
+                        <h4>Cadastre o seu e-mail e senha!</h4>
+
+                        <p>Digite seu email</p>
+                        <input type="email" name="nMail" id="email" placeholder="Digite seu email">
+        
+                        <p>Criar uma senha</p>
+                        <input type="password" max="4" min="4" name="nSenha" id="pass" placeholder="Senha de 8 digitos">
+        
+                        <!--================-->
+        
+                        <p>Repita a senha</p>
+                        <input type="password"  max="4" min=" name="dnSenha" id="dnSenha" placeholder="Senha de 8 digitos">
+                    
+                     </form>
+
+                        <div class="areaDeButoes">
+                
+                            <button id="singnup">criar conta</button>
+                
+                        </div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="controle/app.js"></script>
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCZaluzDJQX8QBESNILOwm10bHElThM3iQ",
+          authDomain: "testeapp-d8950.firebaseapp.com",
+          projectId: "testeapp-d8950",
+          storageBucket: "testeapp-d8950.appspot.com",
+          messagingSenderId: "446908712393",
+          appId: "1:446908712393:web:87010c74776b4ff1f15418"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        
+        document.getElementById('singnup').addEventListener('click' , function(){
+            const email = document.getElementById("email").value
+            const password = document.getElementById("pass").value
+        
+            createUserWithEmailAndPassword(auth, email, password)
+              .then((userCredential) => {
+                  // Signed in
+                  const user = userCredential.user;
+                  // ...
+                  alert('Cadastrado')
+                  novaconta.style.display='none'
+                  location='login.html'
+              })
+              .catch((error) => {
+                  const errorCode = error.code;
+                  const errorMessage = error.message;
+          // ..
+          alert('Erro' + errorMessage)
+        });
+        })
+        
+            </script>
 </body>
 </html>

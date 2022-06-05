@@ -1,5 +1,9 @@
 function criarContoUser(){
-    location='criarconta.html'
+    novaconta.style.display='block'
+}
+
+function fechacadastro(){
+    novaconta.style.display='none'
 }
 
 function irLogin(){
