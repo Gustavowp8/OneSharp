@@ -44,12 +44,12 @@
                         <input type="email" name="nMail" id="email" placeholder="Digite seu email">
         
                         <p>Criar uma senha</p>
-                        <input type="password" max="4" min="4" name="nSenha" id="pass" placeholder="Senha de 8 digitos">
+                        <input type="password" minlength="8" name="nSenha" id="pass" placeholder="Senha de 8 digitos">
         
                         <!--================-->
         
                         <p>Repita a senha</p>
-                        <input type="password"  max="4" min=" name="dnSenha" id="dnSenha" placeholder="Senha de 8 digitos">
+                        <input type="password"  maxlength="8" name="dnSenha" id="dnSenha" placeholder="Senha de 8 digitos">
                     
                      </form>
 
@@ -66,50 +66,59 @@
     </div>
 
     <script src="controle/app.js"></script>
-    <script type="module">
 
+    <script type="module">
         // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-        
+      
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyCZaluzDJQX8QBESNILOwm10bHElThM3iQ",
-          authDomain: "testeapp-d8950.firebaseapp.com",
-          projectId: "testeapp-d8950",
-          storageBucket: "testeapp-d8950.appspot.com",
-          messagingSenderId: "446908712393",
-          appId: "1:446908712393:web:87010c74776b4ff1f15418"
+          apiKey: "AIzaSyAb-zspDkoMIMdkqa72SkZXXxj6xu1vBPo",
+          authDomain: "onesharp-5cc2b.firebaseapp.com",
+          projectId: "onesharp-5cc2b",
+          storageBucket: "onesharp-5cc2b.appspot.com",
+          messagingSenderId: "482361189461",
+          appId: "1:482361189461:web:e4311ae8f31065770120dc"
         };
-        
+      
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
-        
-        document.getElementById('singnup').addEventListener('click' , function(){
-            const email = document.getElementById("email").value
-            const password = document.getElementById("pass").value
-            const senha = document.getElementById('dnSenha').value
 
-            createUserWithEmailAndPassword(auth, email, password)
-              .then((userCredential) => {
-                  // Signed in
-                  const user = userCredential.user;
-                  // ...
-                  alert('Cadastrado')
-                  novaconta.style.display='none'
-                  location='login.html'
-              })
-              .catch((error) => {
-                  const errorCode = error.code;
-                  const errorMessage = error.message;
-          // ..
-          alert('Erro' + errorMessage)
-        });
+        document.getElementById('singnup').addEventListener('click', function(){
+
+            const email = document.getElementById('email').value
+            const password = document.getElementById('pass').value
+            const senhadois = document.getElementById('dnSenha').value
+
+            if(email == '' || password == '' || senhadois == ''){
+                alert('falta dados!')
+            }else if(password != senhadois){
+                alert('As senhas estão diferentes')
+            }else if(password <= 6){
+                alert('A senha precisa ter mais de 6 caracteres')
+            }else{
+                createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in
+                    const user = userCredential.user;
+                    // ...
+                    alert('Cadastrado')
+                    novaconta.style.display='none'
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    alert('OPS! houve algum erro')
+                });
+            }
         })
-        
-            </script>
+
+
+      </script>
 </body>
 </html>

@@ -32,6 +32,10 @@ function irUser(){
 function verMsg(){
     location='trocademsg.html'
 }
+
+function mudaNome(){
+    editNome.style.display='block'
+}
 /*======= compra pacote =======*/
 function chamacompra(){
     confirCompraPacote.style.display='block'
@@ -84,3 +88,26 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+/*=============== Tratamento de fotos ===============*/
+
+function enviafoto(){
+    alert('funciona')
+
+    const fotoperfil = document.getElementById('upfile').value
+
+    console.log(fotoperfil)
+
+    localStorage.foto = fotoperfil;
+    enviafotoeno.style.display='none'
+}
+
+function carrecadados(){
+    
+    const foto = localStorage.foto ;
+    alert(foto)
+    ftPerfil.style.background = localStorage.foto;
+}
+
+
+/*==============================*/

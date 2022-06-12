@@ -168,6 +168,7 @@ body{
     font-weight: 600;
     font-size: 32px;
     font-family: 'Open Sans';
+    cursor: pointer;
 }
 
 .descricao{
@@ -454,6 +455,29 @@ body{
       border-radius: 10px;
       color: red;
       margin: 10px;
+  }
+
+  /* ====== editar nome ====== */
+
+  .editNome{
+      display: none;
+      background: rgba(0, 0, 0, 0.922);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1100;
+  }
+
+  .editNome2{
+    background: #ffffff;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5%;
+    border-radius: 10px;
   }
 
   /*====== Mensagens ======*/
