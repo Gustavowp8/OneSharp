@@ -89,7 +89,7 @@ function readURL(input) {
     }
 }
 
-/*=============== Tratamento de fotos ===============*/
+/*=============== Tratamento de fotos ===============
 
 function enviafoto(){
     alert('funciona')
@@ -100,13 +100,6 @@ function enviafoto(){
 
     localStorage.foto = fotoperfil;
     enviafotoeno.style.display='none'
-}
-
-function carrecadados(){
-    
-    const foto = localStorage.foto ;
-    alert(foto)
-    ftPerfil.style.background = localStorage.foto;
 }
 
 

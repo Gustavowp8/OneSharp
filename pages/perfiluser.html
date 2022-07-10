@@ -48,7 +48,7 @@
     <!--Parte do nome de perfil-->
 
     <div class="presNome">
-        <h2>
+        <h2 id="mNome">
             Seu nome ficara aqui
         </h2>
     </div>
@@ -204,5 +204,41 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="funcao/fotopretador.js"></script>
     <script src="funcao/app.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAb-zspDkoMIMdkqa72SkZXXxj6xu1vBPo",
+          authDomain: "onesharp-5cc2b.firebaseapp.com",
+          projectId: "onesharp-5cc2b",
+          storageBucket: "onesharp-5cc2b.appspot.com",
+          messagingSenderId: "482361189461",
+          appId: "1:482361189461:web:e4311ae8f31065770120dc"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const docRef = doc(db, "nomes", "LA");
+        const docSnap = await getDoc(docRef);
+
+        mNome.innerHTML =  "Document data:", docSnap.data().value;
+
+        if (docSnap.exists()) {
+        console.log("Document data:", docSnap.data());
+        console.log(docSnap.data())
+        } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+        }
+
+      </script>
 </body>
 </html>

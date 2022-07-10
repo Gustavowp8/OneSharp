@@ -31,7 +31,9 @@
     <!--===================-->
 
     <h2>Fale Conosco</h2>
-    <p>Esta página ainda está em construção!</p>
+    <p>Esta página ainda está em construção!</p> <br> <br>
+    <input type="email" id="email">
+    <button id="send">SEND</button>
 
     <!--====== Menu baixo =======-->
     <br> <br><br>
@@ -46,5 +48,41 @@
 
 
     <script src="funcao/app.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAb-zspDkoMIMdkqa72SkZXXxj6xu1vBPo",
+          authDomain: "onesharp-5cc2b.firebaseapp.com",
+          databaseURL: "https://onesharp-5cc2b-default-rtdb.firebaseio.com",
+          projectId: "onesharp-5cc2b",
+          storageBucket: "onesharp-5cc2b.appspot.com",
+          messagingSenderId: "482361189461",
+          appId: "1:482361189461:web:e4311ae8f31065770120dc"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        const name = 'gustavo'
+
+        function writeUserData(userId, name, email, imageUrl) {
+            const db = getDatabase(app);
+            set(ref(db, 'users/' + userId), {
+                username: name,
+                email: email,
+                profile_picture : imageUrl
+            });
+            }
+
+
+      </script>
 </body>
 </html>
